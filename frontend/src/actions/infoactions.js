@@ -5,7 +5,8 @@ export const getinfoaction = (location) => async (dispatch) => {
     try {
         dispatch({ type: GET_INFO_REQUEST });
 
-        const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${process.env.REACT_APP_API_KEY}`);
+        const appid = await axios.get('/api/appid');
+        const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${appid.data}`);
         dispatch({
             type: GET_INFO_SUCCESS,
             payload: data
