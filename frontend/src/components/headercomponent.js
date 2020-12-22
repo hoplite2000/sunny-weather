@@ -11,7 +11,7 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className='ml-auto'>
-                            <a href="https://github.com/nehal2000/sunny-weather"><span className="fas fa-building nav-mar"></span> <div style={{ fontSize: '15px', color: 'black' }}>View Github</div></a>
+                            <a href="https://github.com/hoplite2000/sunny-weather"><span className="fas fa-building nav-mar"></span> <div style={{ fontSize: '15px', color: 'black' }}>View Github</div></a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
